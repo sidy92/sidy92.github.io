@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulaire</title>
+        <link rel="stylesheet" type="text/css" href="../css/formulaire.css" />
+    </head>
+    
+    <body background="../images/parc.jpg">
+    <!--<body>--<
+        <!--<form action="http://www.info.univ-angers.fr/~rossi/reponse.php" method="post"> je ne sais pas
+            encore comment faire pour mettre un lien après la confirmation -->
+        <h1>Formulaire d'inscription pour les détections</h1>
+
+        <p>Vous êtes intéressé par le club et vous souhaitez jouer dans le club de vos rêves ? Remplissez 
+            ce formulaire pour participer aux détections.
+        </p>
+
+        <form action="/ma-page-de-traitement" method="post">
+            <fieldset>
+                <legend><strong>Informations personnelles</strong></legend>
+                <p1>
+                    <p>
+                        Genre :<input type="radio" name="genre" id="1" value="1" />
+                        <label for="1">M</label>
+                        <input type="radio" name="genre" id="2" value="2" checked/>
+                        <label for="2">F</label>
+                    </p>
+                    <p>
+                        <label for="nom">Votre nom :</label>
+                        <input type="name" name="nom" id="mon_nom" />
+                    </p>
+                    <p>
+                        <label for="prenom">Votre prénom :</label>
+                        <input type="name" name="prenom" id="mon_prenom" />
+                    </p>
+                    <p>
+                        <label for="age">Votre âge :</label>
+                        <input type="number" name="age" id="mon_age" />
+                    </p>
+                    <p>
+                        <label for="taille">Votre taille :</label>
+                        <input type="taille" name="tai" id="ma_taille" placeholder="1m75" />
+                    </p>
+                    <p>
+                        <label for="poids">Votre poids :</label>
+                        <input type="poids" name="poi" id="mon_poids" placeholder="75kg" />
+                    </p>
+                    <p>
+                        <label for="adresse_postal">Code postal :</label>
+                        <input type="number" name="cpostal" id="adresse_postal" min="00001" max="99999" value="cpostal" placeholder="49000" />
+                    </p>
+                </p1>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Informations sur votre situation actuelle :</strong></legend>
+                <p2>
+                    <p>Votre catégorie :
+                        <select name="age" value="age">
+                        <optgroup label="Catégorie">
+                            <option value="U8">U8 (7 ans)</option>
+                            <option value="U9">U9 (8 ans)</option>
+                            <option value="U10">U10 (9 ans)</option>
+                            <option value="U11">U11 (10 ans)</option>
+                            <option value="U12">U12 (11 ans)</option>
+                            <option value="U13">U13 (12 ans)</option>
+                            <option value="U14">U14 (13 ans)</option>
+                            <option value="U16">U16 (14/15 ans)</option>
+                            <option value="U18">U18 (16/17 ans)</option>
+                            <option value="U20">U20 (18/19 ans)</option>
+                            <option value="Senior">Senior (20 ans et plus)</option>
+                        </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="nom">Votre club :</label>
+                        <input type="name" name="club" id="mon_club" />
+                    </p>
+
+                    <p>Le niveau de votre catégorie :
+                        <select name="niveau" value="niveau">
+                        <optgroup label="Régional">
+                            <option value="R1">Régional 1</option>
+                            <option value="R2">Régional 2</option>
+                            <option value="R3">Régional 3</option>
+                        </optgroup>
+                        <optgroup label="Départemental">
+                            <option value="D1">Division 1</option>
+                            <option value="D2">Division 2</option>
+                            <option value="D3">Division 3</option>
+                            <option value="D4">Division 4</option>
+                            <option value="D5">Division 5</option>
+                            <option value="D6">Division 6</option>
+                        </optgroup>
+                        </select>
+                    </p>
+
+                    <p>Votre poste :
+                        <select name="poste" value="poste">
+                        <optgroup label="Attaquant">
+                            <option value="Att">Attaquant</option>
+                            <option value="Att_d">Attaquant droit</option>
+                            <option value="Att_g">Attaquant gauche</option>
+                        </optgroup>
+                        <optgroup label="Milieu">
+                            <option value="Mil">Milieu</option>
+                            <option value="Mil_c">Milieu central</option>
+                            <option value="Mil_cd">Milieu central droit</option>
+                            <option value="Mil_cg">Milieu central gauche</option>
+                            <option value="Mil_d">Milieu droit</option>
+                            <option value="Mil_g">Milieu gauche</option>
+                            <option value="Mil_ofc">Milieu offensif central</option>
+                            <option value="Mil_ofd">Milieu offensif droit</option>
+                            <option value="Mil_ofg">Milieu offensif gauche</option>
+                            <option value="Mil_dc">Milieu défensif central</option>
+                        </optgroup>
+                        <optgroup label="Défenseur">
+                            <option value="def">Défenseur</option>
+                            <option value="def_c">Défenseur central</option>
+                            <option value="def_cd">Défenseur central droit</option>
+                            <option value="def_cg">Défenseur central gauche</option>
+                            <option value="def_d">Défenseur droit</option>
+                            <option value="def_g">Défenseur gauche</option>
+                        </optgroup>
+                        <optgroup label="Gardien">
+                            <option value="gar">Gardien</option>
+                        </optgroup>
+                        </select>
+                    </p>
+
+                    <p>Votre pied fort :
+                        <select name="pied" value="pied">
+                        <optgroup label="Pied fort">
+                            <option name="pd" value="pd">Pied droit</option>
+                            <option name="pg" value="pg">Pied gauche</option>
+                        </optgroup>
+                        </select>
+                </p2>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Vos points forts :</strong></legend>
+                <p3>
+                    <p>Cocher les principaux qualité qui vous correspondent</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="tem" id="tdt" value="tem" />
+                                    <label for="tem">Rapide</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="cor" id="correspondances" value="cor" />
+                                    <label for="cor">Efficace</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="tar" id="tarifs" value="tar" />
+                                    <label for="tar">Technique</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="res" id="respect" value="res" />
+                                    <label for="res">Endurant</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="tro" id="affluence" value="tro" />
+                                    <label for="tro">Vision du jeu</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="des" id="desserte" value="des" />
+                                    <label for="des">Physique</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="amp" id="amplitude" value="amp" />
+                                    <label for="amp">Agressif</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="con" id="confort" value="con" />
+                                    <label for="con">Esprit d'équipe</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="con" id="confort" value="con" />
+                                    <label for="con">Discpline</label>
+                                </td>
+                            </tr>
+                        </table>
+
+                    <label for="rem">Autres :</label>
+                    <br/>
+                    <textarea name="remarques" cols="80" rows="10"></textarea>
+                </p3>
+            </fieldset>
+
+            <div>
+                <fieldset>
+                    <legend><strong>Merci de votre inscription !</strong></legend>
+                    <p4>
+                        <button type="submit" class="button">
+                            <input type="submit" value="Soummettre">
+                        </button>
+                        <button2 type="reset" class="button">
+                                <input type="reset" value="Réinitialiser"
+                        </button>
+                    </p4>
+                </fieldset>
+            </div>
+
+        </form>
+        <br/>
+        <p6>
+            Cliquer <a href="presentation_psg.html" title="retour au CV"> ici</a> pour retourner vers la page de présentation.
+        </p6>
+
+        <section>
+            <div id="bas de page">
+                <div id="bas"><center><em>Page réalisé par Sidy Diallo le 21/11/2021</em></center></div>
+            </div>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: skyblue;
+}
+
+p6{
+    color: red;
+}
+
+.button { font-family: 'Georgia', Times New Roman, Times, serif;
+    background-color:gray;
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+fieldset legend{
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+fieldset p1{
+    color: purple;
+}
+
+fieldset p2{
+    color: sienna;
+}
+
+fieldset p3{
+    color: teal;
+}
+
+div{
+    background-color: whitesmoke;
+}
